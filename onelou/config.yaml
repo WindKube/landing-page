@@ -27,6 +27,7 @@ menu:
         img: /img/ghost.png
       url: https://blog.mirai.windkube.com
       weight: 1
+      
     # - name: Note
     #   params:
     #     img: /img/logo2.png
