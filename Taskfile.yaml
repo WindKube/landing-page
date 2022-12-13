@@ -1,0 +1,16 @@
+version: 3
+
+tasks:
+  create:site:
+  - hugo new site windkube
+
+  download:theme:onelou:
+    dir: windkube/themes
+    cmds:
+    - git clone https://github.com/jyygithub/hugo-theme-onelou.git onelou
+    - rm -rf onelou/.git
+
+  run:local: 
+    dir: windkube/themes/onelou
+    cmds:
+    - hugo server -D 
